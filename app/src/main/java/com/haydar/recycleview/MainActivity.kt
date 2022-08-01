@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.haydar.recycleview.databinding.ActivityMainBinding
 import com.haydar.recycleview.firstrecyclerview.FirstActivity
 import com.haydar.recycleview.secondrecyclerview.SecondActivity
+import com.haydar.recycleview.thirdrecyclerview.ThirdActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,5 +26,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SecondActivity::class.java)
             startActivity(intent)
         }
+
+        binding.thirdRecyclerView.setOnClickListener {
+            val intent = Intent(this,ThirdActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }
